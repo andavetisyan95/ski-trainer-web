@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 import { Container, Stack, Typography } from "@mui/material";
 import ImageSlideshow from "@/components/home-page/image-slide";
 import HomePageSection from "@/components/home-page/main-section";
+import SecondSection from "@/components/home-page/second-section";
+import LearnSection from "@/components/home-page/learn-section";
 
 const images = [
   "/images/slide/twoSkier.jpg",
@@ -22,17 +24,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomePageSection />
-      <Stack sx={{ mt: { xs: 80, lg: "40%" } }} spacing={{ xs: 12, md: 10 }}>
+      <Container sx={{ mt: { xs: 95, lg: 105 } }} maxWidth="lg">
         {/* <ImageSlideshow images={images} /> */}
-        <Container maxWidth="lg">
-          <Typography>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus a
-            excepturi alias beatae, quae quod vero repudiandae nisi accusamus
-            distinctio, eaque assumenda architecto aut eos? Pariatur rem magni
-            velit odio.
-          </Typography>
-        </Container>
-      </Stack>
+        <SecondSection />
+      </Container>
+      <LearnSection />
     </>
   );
 }

@@ -32,6 +32,7 @@ const Header: React.FC = () => {
         width: "100%",
         zIndex: 999,
         py: 1,
+        boxShadow: 0,
       }}
     >
       <Toolbar
@@ -123,9 +124,11 @@ const Header: React.FC = () => {
           <DownhillSkiingIcon
             sx={{
               padding: "4px",
-              border: "1px solid #fff",
+              border: scroll
+                ? "1px solid rgba(0, 5, 59, 0.85)"
+                : "1px solid #fff",
               borderRadius: "10px",
-              color: "#fff",
+              color: scroll ? "rgba(0, 5, 59, 0.85)" : "#fff",
               cursor: "pointer",
               width: 40,
               height: 40,

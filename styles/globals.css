@@ -107,12 +107,11 @@ a {
   position: absolute;
   top: 0;
   z-index: -1;
-  height: calc(100% + 2px);
+  height: 100vh;
   width: calc(100% + 2px);
   background-image: url("/images/dahookia/homeMain.jpg");
   background-size: cover;
   background-position: center;
-  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
